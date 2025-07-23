@@ -8,6 +8,7 @@ import Collection from "./component/collection";
 import Gallery from "./component/galler";
 import Footer from "./component/footer";
 import Login from "./component/login"; // Import Login
+import Register from "./component/register"; // Import Register
 
 function App() {
   return (
@@ -29,6 +30,8 @@ function App() {
               }
             />
             <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />{" "}
+            {/* Add this line */}
             {/* Add other routes as needed */}
           </Routes>
         </main>
