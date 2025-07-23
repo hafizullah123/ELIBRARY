@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Navbar from "./component/navbar";
+import Hero from "./component/hero";
+import Usage from "./component/usage";
+import Service from "./component/service"; // Import Service
+import Collection from "./component/collection";
+import Gallery from "./component/galler";
+import Footer from "./component/footer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="min-h-screen flex flex-col bg-gradient-to-br from-blue-50 to-blue-100">
+      <Navbar />
+      <main className="flex-1">
+        <Hero />
+        <Usage />
+        <Service /> {/* Add Service after Usage */}
+        <Collection />
+        <Gallery />
+      </main>
+      <Footer />
     </div>
   );
 }
