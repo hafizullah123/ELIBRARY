@@ -7,14 +7,24 @@ function Usage() {
         <h3 className="text-3xl font-bold text-blue-700 mb-4">
           How to Use eLibrary
         </h3>
-        <ol className="list-decimal list-inside text-gray-700 space-y-3 text-lg mx-auto max-w-xl">
-          <li>Browse the available books using the navigation or gallery.</li>
-          <li>Click "Browse Books" to explore the collection.</li>
+        <ol className="list-decimal list-inside text-gray-700 space-y-4 text-lg mx-auto max-w-xl">
           <li>
-            Use the language selector to switch between Pashto, Dari, and
-            English.
+            <span className="font-semibold text-blue-600">Browse:</span> Use the
+            navigation bar or gallery to explore available books.
           </li>
-          <li>Enjoy reading and discovering new books anytime, anywhere!</li>
+          <li>
+            <span className="font-semibold text-blue-600">Search:</span> Find
+            books by category, author, or title.
+          </li>
+          <li>
+            <span className="font-semibold text-blue-600">Language:</span>
+            Switch between Pashto, Dari, and English using the language
+            selector.
+          </li>
+          <li>
+            <span className="font-semibold text-blue-600">Read:</span> Enjoy
+            reading and discovering new books anytime, anywhere!
+          </li>
         </ol>
       </div>
     </section>
