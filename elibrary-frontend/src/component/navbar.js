@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom"; // Use named import for Link
 
 function Navbar() {
   const [language, setLanguage] = useState("en");
@@ -34,32 +35,32 @@ function Navbar() {
           } md:flex`}
         >
           <li>
-            <a href="/" className="hover:text-blue-200 transition block">
+            <Link to="/" className="hover:text-blue-200 transition block">
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/books" className="hover:text-blue-200 transition block">
+            <Link to="/books" className="hover:text-blue-200 transition block">
               Books
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/about" className="hover:text-blue-200 transition block">
+            <Link to="/about" className="hover:text-blue-200 transition block">
               About
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/login" className="hover:text-blue-200 transition block">
+            <Link to="/login" className="hover:text-blue-200 transition block">
               Login
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="/register"
+            <Link
+              to="/register"
               className="hover:text-blue-200 transition block"
             >
               Register
-            </a>
+            </Link>
           </li>
           <li className="md:hidden">
             <select
