@@ -9,6 +9,8 @@ import Gallery from "./component/galler";
 import Footer from "./component/footer";
 import Login from "./component/login"; // Import Login
 import Register from "./component/register"; // Import Register
+import BookCategory from "./component/book-category";
+import BookForm from "./component/book-form";
 
 function App() {
   return (
@@ -30,7 +32,11 @@ function App() {
               }
             />
             <Route path="/login" element={<Login />} />
-            <Route path="/register" element={<Register />} />{" "}
+            <Route path="/register" element={<Register />} />
+            <Route path="/book-category" element={<BookCategory />} />
+
+            <Route path="/book-form" element={<BookForm />} />
+
             {/* Add this line */}
             {/* Add other routes as needed */}
           </Routes>
