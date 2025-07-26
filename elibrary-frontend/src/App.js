@@ -11,6 +11,7 @@ import Login from "./component/login"; // Import Login
 import Register from "./component/register"; // Import Register
 import BookCategory from "./component/book-category";
 import BookForm from "./component/book-form";
+import AdminDashboard from "./component/admindashboard";
 
 function App() {
   return (
@@ -34,8 +35,8 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route path="/book-category" element={<BookCategory />} />
-
             <Route path="/book-form" element={<BookForm />} />
+            <Route path="/admindashboard" element={<AdminDashboard />} />
 
             {/* Add this line */}
             {/* Add other routes as needed */}
