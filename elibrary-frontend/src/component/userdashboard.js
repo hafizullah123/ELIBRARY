@@ -1,51 +1,54 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function UserDashboard() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
-    <div className="min-h-screen flex bg-gray-100">
+    <div className="min-h-screen flex flex-col md:flex-row bg-gray-100">
+      {/* Mobile Top Bar */}
+      <div className="md:hidden flex justify-between items-center bg-white p-4 shadow-md">
+        <h2 className="text-xl font-bold text-blue-600">User Panel</h2>
+        <button
+          className="text-gray-600 focus:outline-none"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+        >
+          ☰
+        </button>
+      </div>
+
       {/* Sidebar */}
-      <aside className="w-64 bg-white shadow-md p-6">
-        <h2 className="text-xl font-bold text-blue-600 mb-6">User Panel</h2>
+      <aside
+        className={`${
+          isMenuOpen ? "block" : "hidden"
+        } md:block w-full md:w-64 bg-white shadow-md p-6 md:min-h-screen`}
+      >
         <nav className="space-y-4">
           <a href="#" className="text-gray-700 hover:text-blue-600 block">
-            Books
+            📚 Books
           </a>
           <a href="#" className="text-gray-700 hover:text-blue-600 block">
-            Topics
+            📝 Topics
           </a>
           <a href="#" className="text-gray-700 hover:text-blue-600 block">
-            Profile
+            👤 Profile
           </a>
           <a href="#" className="text-gray-700 hover:text-blue-600 block">
-            Logout
+            🚪 Logout
           </a>
         </nav>
       </aside>
 
       {/* Main Content */}
-      <main className="flex-1 p-6">
+      <main className="flex-1 p-4 md:p-6">
         <header className="mb-6">
           <h1 className="text-2xl font-bold text-gray-800">Welcome, User!</h1>
           <p className="text-gray-500">Here is your recent activity</p>
         </header>
 
-        {/* Cards Section */}
-        <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div className="bg-white p-4 rounded-xl shadow hover:shadow-md transition">
-            <h3 className="text-lg font-semibold text-gray-700">
-              Total Topics
-            </h3>
-            <p className="text-2xl font-bold text-blue-600">12</p>
-          </div>
-          <div className="bg-white p-4 rounded-xl shadow hover:shadow-md transition">
-            <h3 className="text-lg font-semibold text-gray-700">Published</h3>
-            <p className="text-2xl font-bold text-green-500">9</p>
-          </div>
-          <div className="bg-white p-4 rounded-xl shadow hover:shadow-md transition">
-            <h3 className="text-lg font-semibold text-gray-700">Pending</h3>
-            <p className="text-2xl font-bold text-yellow-500">3</p>
-          </div>
-        </section>
+        {/* Dashboard Content Placeholder */}
+        {/* <section className="bg-white rounded-xl shadow p-4">
+          <p className="text-gray-600">Dashboard content goes here...</p>
+        </section> */}
       </main>
     </div>
   );
