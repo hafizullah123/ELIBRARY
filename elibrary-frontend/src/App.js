@@ -13,6 +13,7 @@ import BookCategory from "./component/book-category";
 import BookForm from "./component/book-form";
 import AdminDashboard from "./component/admindashboard";
 import TopicInsertForm from "./component/topic-insertion";
+import UserDashboard from "./component/userdashboard";
 
 function App() {
   return (
@@ -38,8 +39,8 @@ function App() {
             <Route path="/book-category" element={<BookCategory />} />
             <Route path="/book-form" element={<BookForm />} />
             <Route path="/admindashboard" element={<AdminDashboard />} />
-            <Route path="/topic-insertion" element={<TopicInsertForm />} />S
-            {/* Add this line */}
+            <Route path="/topic-insertion" element={<TopicInsertForm />} />
+            <Route path="/userdashboard" element={<UserDashboard />} />
             {/* Add other routes as needed */}
           </Routes>
         </main>
