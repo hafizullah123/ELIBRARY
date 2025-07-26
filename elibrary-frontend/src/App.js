@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Form } from "react-router-dom";
 import Navbar from "./component/navbar";
 import Hero from "./component/hero";
 import Usage from "./component/usage";
@@ -14,6 +14,7 @@ import BookForm from "./component/book-form";
 import AdminDashboard from "./component/admindashboard";
 import TopicInsertForm from "./component/topic-insertion";
 import UserDashboard from "./component/userdashboard";
+import Bookselection from "./component/book-selection";
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
             <Route path="/admindashboard" element={<AdminDashboard />} />
             <Route path="/topic-insertion" element={<TopicInsertForm />} />
             <Route path="/userdashboard" element={<UserDashboard />} />
+            <Route path="/book-selection" element={<Bookselection />} />
             {/* Add other routes as needed */}
           </Routes>
         </main>
