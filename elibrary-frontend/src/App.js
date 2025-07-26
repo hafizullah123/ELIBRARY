@@ -15,6 +15,7 @@ import AdminDashboard from "./component/admindashboard";
 import TopicInsertForm from "./component/topic-insertion";
 import UserDashboard from "./component/userdashboard";
 import Bookselection from "./component/book-selection";
+import TopicSelection from "./component/topic-selection";
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
             <Route path="/topic-insertion" element={<TopicInsertForm />} />
             <Route path="/userdashboard" element={<UserDashboard />} />
             <Route path="/book-selection" element={<Bookselection />} />
+            <Route path="/topic-selection" element={<TopicSelection />} />
             {/* Add other routes as needed */}
           </Routes>
         </main>
