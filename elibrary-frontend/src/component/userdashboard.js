@@ -23,10 +23,16 @@ export default function UserDashboard() {
         } md:block w-full md:w-64 bg-white shadow-md p-6 md:min-h-screen`}
       >
         <nav className="space-y-4">
-          <a href="#" className="text-gray-700 hover:text-blue-600 block">
+          <a
+            href="book-selection"
+            className="text-gray-700 hover:text-blue-600 block"
+          >
             📚 Books
           </a>
-          <a href="#" className="text-gray-700 hover:text-blue-600 block">
+          <a
+            href="topic-selection"
+            className="text-gray-700 hover:text-blue-600 block"
+          >
             📝 Topics
           </a>
           <a href="#" className="text-gray-700 hover:text-blue-600 block">
