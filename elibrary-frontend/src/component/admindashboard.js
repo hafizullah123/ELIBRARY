@@ -23,6 +23,9 @@ const AdminDashboard = () => {
             Users
           </a>
           <a href="#" className="block p-2 rounded hover:bg-gray-200">
+            Reports
+          </a>
+          <a href="#" className="block p-2 rounded hover:bg-gray-200">
             Settings
           </a>
         </nav>

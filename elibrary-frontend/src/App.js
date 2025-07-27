@@ -17,6 +17,7 @@ import UserDashboard from "./component/userdashboard";
 import Bookselection from "./component/book-selection";
 import TopicSelection from "./component/topic-selection";
 import LiborDashboard from "./component/libordashboard";
+import AdminReport from "./component/adminreport";
 function App() {
   return (
     <BrowserRouter>
@@ -46,6 +47,7 @@ function App() {
             <Route path="/book-selection" element={<Bookselection />} />
             <Route path="/topic-selection" element={<TopicSelection />} />
             <Route path="/libordashboard" element={<LiborDashboard />} />
+            <Route path="/adminreport" element={<AdminReport />} />
             {/* Add other routes as needed */}
           </Routes>
         </main>
